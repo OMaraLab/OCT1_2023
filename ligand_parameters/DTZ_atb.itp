@@ -1,0 +1,368 @@
+;----------------------------TITLE -----------------------------------------------------------------------------------------
+;   Diltiazem
+;
+; This file was generated at 16:28 on 2023-03-31 by
+;
+;                  Automatic Topology Builder  
+;
+;                   REVISION 2022-10-31 14:18:01
+;---------------------------------------------------------------------------------------------------------------------------
+; Authors     : Martin Stroet, Bertrand Caron, Alpeshkumar K. Malde, Thomas Lee, Alan E. Mark
+;
+; Institute   : Molecular Dynamics group, 
+;               School of Chemistry and Molecular Biosciences (SCMB),
+;               The University of Queensland, QLD 4072, Australia
+; URL         : https://atb.uq.edu.au
+; Citations   : 1. Malde AK, Zuo L, Breeze M, Stroet M, Poger D, Nair PC, Oostenbrink C, Mark AE.
+;                  An Automated force field Topology Builder (ATB) and repository: version 1.0.
+;                  Journal of Chemical Theory and Computation, 2011, 7, 4026-4037.
+;               2. Stroet M, Caron B, Visscher K, Geerke D, Malde AK, Mark AE.
+;                  Automated Topology Builder version 3.0: Prediction of solvation free enthalpies in water and hexane.
+;                  DOI:10.1021/acs.jctc.8b00768
+;
+; Disclaimer  : 
+;      While every effort has been made to ensure the accuracy and validity of parameters provided below
+;      the assignment of parameters is being based on an automated procedure combining data provided by a
+;      given user as well as calculations performed using third party software. They are provided as a guide.
+;      The authors of the ATB cannot guarantee that the parameters are complete or that the parameters provided
+;      are appropriate for use in any specific application. Users are advised to treat these parameters with discretion
+;      and to perform additional validation tests for their specific application if required. Neither the authors
+;      of the ATB or The University of Queensland except any responsibly for how the parameters may be used.
+;
+; Release notes and warnings: 
+;  (1) The topology is based on a set of atomic coordinates and other data provided by the user after
+;      after quantum mechanical optimization of the structure using different levels of theory depending on
+;      the nature of the molecule.
+;  (2) In some cases the automatic bond, bond angle and dihedral type assignment is ambiguous.
+;      In these cases alternative type codes are provided at the end of the line.
+;  (3) While bonded parameters are taken where possible from the nominated force field non-standard bond, angle and dihedral
+;      type code may be incorporated in cases where an exact match could not be found. These are marked as "non-standard"
+;      or "uncertain" in comments.
+;  (4) In some cases it is not possible to assign an appropriate parameter automatically. "%%" is used as a place holder
+;      for those fields that could not be determined automatically. The parameters in these fields must be assigned manually
+;      before the file can be used.
+;---------------------------------------------------------------------------------------------------------------------------
+; Input Structure : NB71.
+; Output          : UNITED ATOM topology
+;	Use in conjunction with the corresponding united atom PDB file.
+;---------------------------------------------------------------------------------------------------------------------------
+; Citing this topology file
+; ATB molid: 1253541
+; ATB Topology Hash: 664c7
+;---------------------------------------------------------------------------------------------------------------------------
+; Initial Guess Topology Generation:
+; The topology was generated from AM1 optimized geometry and MOPAC charges.
+; Bonded and van der Waals parameters were taken from the GROMOS 54A7 parameter set.
+;---------------------------------------------------------------------------------------------------------------------------
+;
+; Parameters for Diltiazem
+; Name changed from NB71 to DTZ by Ada Quinn, ada.quinn@uq.edu.au, 3 Apr 2023
+;
+;
+
+[ moleculetype ]
+; Name   nrexcl
+DTZ      3
+[ atoms ]
+;  nr  type  resnr  resid  atom  cgnr  charge    mass
+    1   CH3    1    DTZ     C18    1    0.194  15.0350
+    2    OE    1    DTZ      O2    2   -0.203  15.9994
+    3  CAro    1    DTZ     C17    3    0.108  12.0110
+    4  CAro    1    DTZ     C16    4   -0.185  12.0110
+    5    HC    1    DTZ     H19    5    0.153   1.0080
+    6  CAro    1    DTZ     C15    6   -0.065  12.0110
+    7    HC    1    DTZ     H18    7    0.140   1.0080
+    8  CAro    1    DTZ     C14    8   -0.132  12.0110
+    9  CAro    1    DTZ     C20    9   -0.065  12.0110
+   10    HC    1    DTZ     H24   10    0.140   1.0080
+   11  CAro    1    DTZ     C19   11   -0.185  12.0110
+   12    HC    1    DTZ     H23   12    0.153   1.0080
+   13     C    1    DTZ      C3   13   -0.164  12.0110
+   14    HC    1    DTZ      H2   14    0.137   1.0080
+   15     C    1    DTZ      C2   15    0.046  12.0110
+   16    HC    1    DTZ      H1   16    0.130   1.0080
+   17    OE    1    DTZ      O3   17   -0.227  15.9994
+   18  CPos    1    DTZ     C21   18    0.351  12.0110
+   19 OEOpt    1    DTZ      O4   19   -0.443  15.9994
+   20   CH3    1    DTZ     C22   20    0.175  15.0350
+   21  CPos    1    DTZ      C1   21    0.311  12.0110
+   22 OEOpt    1    DTZ      O1   22   -0.393  15.9994
+   23  NTer    1    DTZ      N1   23   -0.286  14.0067
+   24  CAro    1    DTZ      C5   24    0.062  12.0110
+   25  CAro    1    DTZ      C4   25   -0.294  12.0110
+   26     S    1    DTZ      S1   26    0.236  32.0600
+   27  CAro    1    DTZ     C13   27   -0.055  12.0110
+   28    HC    1    DTZ     H17   28    0.166   1.0080
+   29  CAro    1    DTZ     C12   29   -0.130  12.0110
+   30    HC    1    DTZ     H16   30    0.159   1.0080
+   31  CAro    1    DTZ     C11   31   -0.081  12.0110
+   32    HC    1    DTZ     H15   32    0.152   1.0080
+   33  CAro    1    DTZ     C10   33   -0.157  12.0110
+   34    HC    1    DTZ     H14   34    0.130   1.0080
+   35   CH2    1    DTZ      C6   35    0.234  14.0270
+   36   CH2    1    DTZ      C7   36    0.132  14.0270
+   37    NL    1    DTZ      N2   37   -0.001  14.0067
+   38  HS14    1    DTZ      H7   38    0.294   1.0080
+   39   CH3    1    DTZ      C8   39    0.228  15.0350
+   40   CH3    1    DTZ      C9   40    0.235  15.0350
+; total charge of the molecule:   1.000
+[ bonds ]
+;  ai   aj  funct   c0         c1
+    1    2    2   0.1430   8.1800e+06
+    2    3    2   0.1380   1.1000e+07
+    3    4    2   0.1410   6.5389e+06
+    3   11    2   0.1410   6.5389e+06
+    4    5    2   0.1090   1.2300e+07
+    4    6    2   0.1390   8.6600e+06
+    6    7    2   0.1100   1.2100e+07
+    6    8    2   0.1400   8.5400e+06
+    8    9    2   0.1400   8.5400e+06
+    8   13    2   0.1480   5.7300e+06
+    9   10    2   0.1100   1.2100e+07
+    9   11    2   0.1390   8.6600e+06
+   11   12    2   0.1090   1.2300e+07
+   13   14    2   0.1130   7.0483e+06
+   13   15    2   0.1530   7.1500e+06
+   13   26    2   0.1790   2.1847e+06
+   15   16    2   0.1130   7.0483e+06
+   15   17    2   0.1430   8.1800e+06
+   15   21    2   0.1530   7.1500e+06
+   17   18    2   0.1360   1.0200e+07
+   18   19    2   0.1230   1.6600e+07
+   18   20    2   0.1490   1.4189e+07
+   21   22    2   0.1250   1.3400e+07
+   21   23    2   0.1400   8.5400e+06
+   23   24    2   0.1420   3.2236e+06
+   23   35    2   0.1450   5.2319e+06
+   24   25    2   0.1420   3.2236e+06
+   24   33    2   0.1410   6.5389e+06
+   25   26    2   0.1710   2.0519e+06
+   25   27    2   0.1390   8.6600e+06
+   27   28    2   0.1100   1.2100e+07
+   27   29    2   0.1390   8.6600e+06
+   29   30    2   0.1100   1.2100e+07
+   29   31    2   0.1390   8.6600e+06
+   31   32    2   0.1100   1.2100e+07
+   31   33    2   0.1390   8.6600e+06
+   33   34    2   0.1100   1.2100e+07
+   35   36    2   0.1540   4.2166e+06
+   36   37    2   0.1500   8.3700e+06
+   37   38    2   0.1040   9.2456e+06
+   37   39    2   0.1480   5.7300e+06
+   37   40    2   0.1480   5.7300e+06
+[ pairs ]
+;  ai   aj  funct  ;  all 1-4 pairs but the ones excluded in GROMOS itp
+    1    4    1
+    1   11    1
+    2    5    1
+    2    6    1
+    2    9    1
+    2   12    1
+    3    7    1
+    3   10    1
+    4   12    1
+    4   13    1
+    5    7    1
+    5    8    1
+    5   11    1
+    6   10    1
+    6   14    1
+    6   15    1
+    6   26    1
+    7    9    1
+    7   13    1
+    8   12    1
+    8   16    1
+    8   17    1
+    8   21    1
+    8   25    1
+    9   14    1
+    9   15    1
+    9   26    1
+   10   12    1
+   10   13    1
+   11   13    1
+   13   18    1
+   13   22    1
+   13   23    1
+   13   24    1
+   13   27    1
+   14   16    1
+   14   17    1
+   14   21    1
+   14   25    1
+   15   19    1
+   15   20    1
+   15   24    1
+   15   25    1
+   15   35    1
+   16   18    1
+   16   22    1
+   16   23    1
+   16   26    1
+   17   22    1
+   17   23    1
+   17   26    1
+   18   21    1
+   21   25    1
+   21   26    1
+   21   33    1
+   21   36    1
+   22   24    1
+   22   35    1
+   23   26    1
+   23   27    1
+   23   31    1
+   23   34    1
+   23   37    1
+   24   28    1
+   24   32    1
+   24   36    1
+   25   30    1
+   25   34    1
+   25   35    1
+   26   28    1
+   26   29    1
+   26   33    1
+   27   32    1
+   28   30    1
+   28   31    1
+   29   34    1
+   30   32    1
+   30   33    1
+   32   34    1
+   33   35    1
+   35   38    1
+   35   39    1
+   35   40    1
+[ angles ]
+;  ai   aj   ak  funct   angle     fc
+    1    2    3    2    116.00   465.00
+    2    3    4    2    115.00   610.00
+    2    3   11    2    115.00   610.00
+    4    3   11    2    120.00   560.00
+    3    4    5    2    120.00   505.00
+    3    4    6    2    120.00   560.00
+    5    4    6    2    120.00   505.00
+    4    6    7    2    120.00   505.00
+    4    6    8    2    120.00   560.00
+    7    6    8    2    120.00   505.00
+    6    8    9    2    120.00   560.00
+    6    8   13    2    120.00   560.00
+    9    8   13    2    120.00   560.00
+    8    9   10    2    120.00   505.00
+    8    9   11    2    120.00   560.00
+   10    9   11    2    120.00   505.00
+    3   11    9    2    120.00   560.00
+    3   11   12    2    120.00   505.00
+    9   11   12    2    120.00   505.00
+    8   13   14    2    109.00  1680.51
+    8   13   15    2    120.00   560.00
+    8   13   26    2    104.00   490.00
+   14   13   15    2    106.00  1733.55
+   14   13   26    2    109.00  1680.51
+   15   13   26    2    113.00   545.00
+   13   15   16    2    110.00   285.00
+   13   15   17    2    109.50   520.00
+   13   15   21    2    111.00   530.00
+   16   15   17    2    107.57   484.00
+   16   15   21    2    108.53   443.00
+   17   15   21    2    111.00   530.00
+   15   17   18    2    119.00  2211.40
+   17   18   19    2    118.00  7474.41
+   17   18   20    2    111.00   530.00
+   19   18   20    2    126.00   640.00
+   15   21   22    2    121.00   685.00
+   15   21   23    2    120.00   560.00
+   22   21   23    2    119.00  2211.40
+   21   23   24    2    122.00   700.00
+   21   23   35    2    120.00   560.00
+   24   23   35    2    117.00   635.00
+   23   24   25    2    120.00   560.00
+   23   24   33    2    120.00   560.00
+   25   24   33    2    120.00   560.00
+   24   25   26    2    120.00   560.00
+   24   25   27    2    120.00   560.00
+   26   25   27    2    120.00   560.00
+   13   26   25    2    100.00   475.00
+   25   27   28    2    120.00   505.00
+   25   27   29    2    120.00   560.00
+   28   27   29    2    120.00   505.00
+   27   29   30    2    120.00   505.00
+   27   29   31    2    120.00   560.00
+   30   29   31    2    120.00   505.00
+   29   31   32    2    120.00   505.00
+   29   31   33    2    120.00   560.00
+   32   31   33    2    120.00   505.00
+   24   33   31    2    120.00   560.00
+   24   33   34    2    120.00   505.00
+   31   33   34    2    120.00   505.00
+   23   35   36    2    115.00   610.00
+   35   36   37    2    115.00   610.00
+   36   37   38    2    109.50   425.00
+   36   37   39    2    110.30   524.00
+   36   37   40    2    116.00   620.00
+   38   37   39    2    109.50   425.00
+   38   37   40    2    109.50   425.00
+   39   37   40    2    111.00   530.00
+[ dihedrals ]
+; GROMOS improper dihedrals
+;  ai   aj   ak   al  funct   angle     fc
+   21   15   22   23    2      0.00   167.36
+   25   24   26   27    2      0.00   167.36
+   24   23   25   33    2      0.00   167.36
+   23   21   24   35    2      0.00   167.36
+   33   24   31   34    2      0.00   167.36
+   31   29   32   33    2      0.00   167.36
+   29   27   30   31    2      0.00   167.36
+   27   25   28   29    2      0.00   167.36
+    8    6    9   13    2      0.00   167.36
+    6    4    7    8    2      0.00   167.36
+    4    3    5    6    2      0.00   167.36
+    3    2    4   11    2      0.00   167.36
+   11    3    9   12    2      0.00   167.36
+    9    8   10   11    2      0.00   167.36
+   18   17   19   20    2      0.00   167.36
+   15   13   21   17    2     35.26   334.72
+   13   26   15    8    2     35.26   334.72
+[ dihedrals ]
+;  ai   aj   ak   al  funct    ph0      cp     mult
+    1    2    3    4    1    180.00    24.00    2
+    3    4    6    8    1    180.00    41.80    2
+    4    3   11    9    1    180.00    41.80    2
+    4    6    8    9    1    180.00    41.80    2
+    6    8    9   11    1    180.00    41.80    2
+    6    8   13   15    1    180.00     1.00    6
+    8    9   11    3    1    180.00    41.80    2
+   11    3    4    6    1    180.00    41.80    2
+   13   15   21   22    1      0.00     1.00    6
+   15   13   26   25    1      0.00     2.93    3
+   15   17   18   20    1    180.00    24.00    2
+   21   15   17   18    1      0.00     1.26    3
+   21   23   24   25    1    180.00    33.50    2
+   21   23   35   36    1      0.00     3.77    6
+   22   21   23   24    1    180.00    33.50    2
+   23   35   36   37    1      0.00     5.92    3
+   24   25   26   13    1      0.00     0.42    2
+   24   25   27   29    1    180.00    41.80    2
+   25   24   33   31    1    180.00    41.80    2
+   25   27   29   31    1    180.00    41.80    2
+   26   13   15   21    1      0.00     5.92    3
+   27   29   31   33    1    180.00    41.80    2
+   29   31   33   24    1    180.00    41.80    2
+   33   24   25   27    1    180.00    41.80    2
+   35   36   37   39    1      0.00     1.05    3
+[ exclusions ]
+;  ai   aj  funct  ;  GROMOS 1-4 exclusions
+    3    8
+    4    9
+    6   11
+   24   29
+   25   31
+   27   33
+
+
+; Include Position restraint file
+#ifdef POSRES
+#include "DTZ_posres.itp"
+#endif

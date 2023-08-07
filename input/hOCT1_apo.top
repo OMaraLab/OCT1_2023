@@ -1,0 +1,50 @@
+;
+;	File 'hOCT1-twochains_no_ter.top' was generated
+;	By user: ada (501)
+;	On host: Arbit
+;	At date: Wed Dec 14 10:22:42 2022
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                    :-) GROMACS - gmx pdb2gmx, 2021.4 (-:
+;	
+;	Executable:   /usr/local/packages/gromacs/gromacs-2021.4/bin/gmx
+;	Data prefix:  /usr/local/packages/gromacs/gromacs-2021.4
+;	Working dir:  /Users/ada/OCT1/build-models
+;	Command line:
+;	  gmx pdb2gmx -f hOCT1-twochains_no_ter.pdb -o hOCT1-twochains_no_ter_pdb2gmx.pdb -ter -ignh -p hOCT1-twochains_no_ter.top -i hOCT1-twochains_no_ter.itp
+;	Force field was read from the standard GROMACS share directory.
+;
+
+; Include forcefield parameters
+#include "../gromos54a7.ff/forcefield.itp"
+#include "../gromos54a7.ff/popc.itp"
+#include "../gromos54a7.ff/CLR.itp"
+#include "../gromos54a7.ff/hOCT1-twochains-ASP357ASPH.itp"
+
+; Include water topology
+#include "../gromos54a7.ff/spc.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "../gromos54a7.ff/ions.itp"
+
+[ system ]
+; Name
+hOCT1-twochains-ASP357ASPH apo in water
+
+[ molecules ]
+; Compound        #mols
+hOCT1-twochains-ASP357ASPH    1
+POPC               786
+CLR                200
+SOL         63526
+NA               313
+CL               314

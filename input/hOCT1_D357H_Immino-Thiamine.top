@@ -1,0 +1,34 @@
+
+; Include forcefield parameters
+#include "../gromos54a7.ff/forcefield.itp"
+#include "../gromos54a7.ff/popc.itp"
+#include "../gromos54a7.ff/CLR.itp"
+#include "../gromos54a7.ff/hOCT1-twochains-ASP357ASPH.itp"
+#include "../gromos54a7.ff/THII-41_flat.itp"
+
+; Include water topology
+#include "../gromos54a7.ff/spc.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "../gromos54a7.ff/ions.itp"
+
+[ system ]
+; Name
+THIA docked in hOCT1-twochains-ASP357ASPH in 80:20 POPC/CLR membrane in water
+
+[ molecules ]
+; Compound        #mols
+hOCT1-twochains-ASP357ASPH    1
+POPC               786
+CLR                200
+THII               1
+SOL         54961
+NA               285
+CL               287
